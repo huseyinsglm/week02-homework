@@ -17,7 +17,7 @@ export class ContactFormClassComponent extends React.Component {
     render() {
         const { firstName, lastName, phone } = this.state
         return (
-            <div className="contianer form-container">
+            <div className="container form-container">
                 <form onSubmit={e => {
                     e.preventDefault();
                     console.log(this.state)

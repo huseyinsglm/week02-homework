@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Button } from "../button";
-import { FormItem } from "../form-item";
+import React, {useEffect, useState} from "react";
+import {Button} from "../button";
+import {FormItem} from "../form-item";
 import Pagination from "../Pagination";
 
 export function DataGrid() {
@@ -25,7 +25,6 @@ export function DataGrid() {
                 setLoading(false);
             })
             .catch((e) => {
-                console.log(e);
                 setLoading(false);
             });
     };
@@ -90,7 +89,7 @@ export function DataGrid() {
                         );
                     })}
                 <Pagination
-                    postsPerPage={postsPerPage}
+                    postsPehirPage={postsPerPage}
                     totalPosts={items.length}
                     paginate={paginate}
                 />
@@ -183,7 +182,7 @@ export function DataGrid() {
                     value={todo.title}
                     onChange={(e) =>
                         setTodo((todos) => {
-                            return { ...todos, title: e.target.value };
+                            return {...todos, title: e.target.value};
                         })
                     }
                 />
@@ -193,7 +192,7 @@ export function DataGrid() {
                     value={todo.completed}
                     onChange={(e) =>
                         setTodo((todos) => {
-                            return { ...todos, completed: e.target.checked };
+                            return {...todos, completed: e.target.checked};
                         })
                     }
                 />

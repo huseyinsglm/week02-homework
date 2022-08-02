@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-// import other from './Other.module.css'; .module is important!
-// import { TitleClassComponent, TitleFnComponent } from "./components/title"
-
-// import { ContactFormClassComponent, ContactFormFnComponent } from "./components/contact"
 import { DataGrid, DataGridClsComponent } from './components/data-grid';
 import { Header } from './components/header';
 import { Button } from "./components/button"
